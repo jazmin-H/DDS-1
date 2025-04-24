@@ -70,10 +70,6 @@ const Contact = () => {
     <div>
       {/* Hero image */}
       <div className="w-full h-[250px] md:h-[400px] relative">
-        {/* Contact hero image placeholder - Reemplazar con /images/contact-hero.jpg */}
-        <div className="w-full h-full bg-[#c8553d]/20 flex items-center justify-center">
-          <span className="text-[#c8553d] font-semibold">[Imagen: Contáctanos]</span>
-        </div>
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Contáctanos</h1>
         </div>
@@ -169,8 +165,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Dirección</h3>
-                      <p className="text-gray-600">Calle Artesanos 123, Colonia Centro</p>
-                      <p className="text-gray-600">Ciudad de México, CP 12345</p>
+                      <p className="text-gray-600">Estados Unidos 381, C1101</p>
+                      <p className="text-gray-600"> Cdad. Autónoma de Buenos Aires</p>
                     </div>
                   </div>
 
@@ -269,9 +265,17 @@ const Contact = () => {
             {/* Google Maps */}
             <div className="mt-12">
               <h2 className="text-2xl font-bold mb-6">Nuestra Ubicación</h2>
-              {/* Map placeholder - Reemplazar con iframe de Google Maps */}
-              <div className="w-full h-[400px] bg-[#f8f4e3] rounded-lg overflow-hidden flex items-center justify-center">
-                <span className="text-[#c8553d] font-semibold">[Mapa: Ubicación de Cerámica Artesanal]</span>
+              <div className="w-full h-[400px] bg-gray-200 rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105069.9883676514!2d-58.523810002734336!3d-34.61839199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d4b6b101b5%3A0x9fc5a3f7ca4029de!2sTaller%20Galer%C3%ADa%20Dawa%20Cer%C3%A1micas!5e0!3m2!1ses-419!2sar!4v1745516607523!5m2!1ses-419!2sar" 
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación de Cerámica Artesanal"
+                ></iframe>
               </div>
             </div>
           </div>

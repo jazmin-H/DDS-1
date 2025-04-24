@@ -25,8 +25,12 @@ const Footer = () => {
                   className="bg-white p-2 rounded transition-transform hover:scale-105"
                 >
                   {/* MercadoPago logo placeholder - Reemplazar con /images/mercadopago.png */}
-                  <div className="h-8 w-32 bg-white rounded flex items-center justify-center">
-                    <span className="text-[#009ee3] text-xs font-semibold">[Logo: MercadoPago]</span>
+                  <div className="h-5 w-15 bg-white rounded flex items-center justify-center">
+                    <img 
+                     src="/images/mercado.jpg" 
+                     alt="Mercado Pago - Métodos de pago" 
+                     className="h-full w-full object-contain"
+                    /> 
                   </div>
                 </a>
               </div>

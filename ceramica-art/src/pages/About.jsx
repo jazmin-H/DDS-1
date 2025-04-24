@@ -3,10 +3,6 @@ const About = () => {
     <div>
       {/* Hero image */}
       <div className="w-full h-[250px] md:h-[400px] relative">
-        {/* About hero image placeholder - Reemplazar con /images/about-hero.jpg */}
-        <div className="w-full h-full bg-[#c8553d]/30 flex items-center justify-center">
-          <span className="text-[#c8553d] font-semibold">[Imagen: Nuestro Taller]</span>
-        </div>
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Sobre Nosotros</h1>
         </div>
