@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+.next/
+
+# Variables de entorno
+.env*
+!.env.example
+
+# Builds y caché
+dist/
+build/
+.cache/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store

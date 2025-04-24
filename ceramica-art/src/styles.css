@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins text-dark bg-beige;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-patrick;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-terracotta text-white py-2 px-4 rounded hover:bg-[#a73f2d] transition-colors;
+  }
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  .section {
+    @apply py-12;
+  }
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg;
+  }
+  .hero-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center;
+  }
+}
