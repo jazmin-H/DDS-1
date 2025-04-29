@@ -14,27 +14,6 @@ const Footer = () => {
               Creaciones únicas hechas a mano con pasión y dedicación. Cada pieza cuenta una historia.
             </p>
 
-            {/* Payment methods */}
-            <div className="mt-6">
-              <h4 className="text-lg font-semibold mb-3">Métodos de pago:</h4>
-              <div className="flex space-x-4">
-                <a
-                  href="https://www.mercadopago.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white p-2 rounded transition-transform hover:scale-105"
-                >
-                  {/* MercadoPago logo placeholder - Reemplazar con /images/mercadopago.png */}
-                  <div className="h-5 w-15 bg-white rounded flex items-center justify-center">
-                    <img 
-                     src="/images/mercado.jpg" 
-                     alt="Mercado Pago - Métodos de pago" 
-                     className="h-full w-full object-contain"
-                    /> 
-                  </div>
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Quick links */}

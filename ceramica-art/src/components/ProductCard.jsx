@@ -1,23 +1,11 @@
 "use client"
 
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Toast from "./Toast";
-
 const ProductCard = ({ product }) => {
-  const { name, image, description, price } = product; // Asegúrate de incluir 'image'
-  const [showToast, setShowToast] = useState(false);
-  const navigate = useNavigate();
-
-  const handlePayNow = () => {
-    sessionStorage.setItem("selectedProduct", JSON.stringify(product));
-    setShowToast(true);
-    setTimeout(() => navigate("/pagos"), 1000);
-  };
+  const { name, image, description, price } = product;
 
   return (
     <div className="card group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-      {/* Contenedor de imagen con manejo de errores */}
+      {/* Contenedor de imagen (sin cambios) */}
       <div className="aspect-square overflow-hidden relative">
         {image ? (
           <img
@@ -40,32 +28,19 @@ const ProductCard = ({ product }) => {
         )}
       </div>
 
-      {/* Detalles del producto */}
-      <div className="p-4">
-        <h3 className="text-xl font-semibold text-gray-800 line-clamp-1">{name}</h3>
-        <p className="text-gray-600 mt-2 text-sm line-clamp-2 min-h-[40px]">
-          {description}
-        </p>
-        <div className="mt-4 flex justify-between items-center">
-          <span className="text-[#c8553d] font-bold text-lg">
-            ${price.toFixed(2)}
-          </span>
-          <button
-            className="bg-[#c8553d] hover:bg-[#b74c36] text-white py-2 px-4 rounded-full transition-colors"
-            onClick={handlePayNow}
-          >
-            Comprar ahora
-          </button>
-        </div>
-      </div>
-
-      {/* Toast de confirmación */}
-      {showToast && (
-        <Toast
-          message="¡Redirigiendo a pagos!"
-          onClose={() => setShowToast(false)}
-        />
-      )}
+ {/* Detalles del producto (versión con precio a la izquierda) */}
+     <div className="p-4">
+         <h3 className="text-xl font-semibold text-gray-800 line-clamp-1">{name}</h3>
+         <p className="text-gray-600 mt-2 text-sm line-clamp-2 min-h-[40px]">
+           {description}
+         </p>
+       <div className="mt-4"> {/* Contenedor simplificado - precio a la izquierda por defecto */}
+         <span className="text-[#c8553d] font-bold text-lg">
+           ${price.toFixed(2)}
+         </span>
+          {/* Espacio reservado si luego agregas otro elemento a la derecha */}
+       </div>
+     </div>
     </div>
   );
 };

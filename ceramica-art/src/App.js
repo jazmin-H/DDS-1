@@ -5,7 +5,6 @@ import Home from "./pages/Home"
 import Products from "./pages/Products"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Pagos from "./pages/Pagos"
 import "./styles.css"
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/pagos" element={<Pagos />} />
+            {/* Ruta de pagos eliminada */}
           </Routes>
         </main>
         <Footer />
