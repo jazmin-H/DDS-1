@@ -33,10 +33,12 @@ const About = () => {
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3">
                   <div className="aspect-square overflow-hidden rounded-lg">
-                    {/* History image 1 placeholder - Reemplazar con /images/history1.jpg */}
-                    <div className="w-full h-full bg-[#f8f4e3] flex items-center justify-center">
-                      <span className="text-[#c8553d] font-semibold">[Imagen: Inicios]</span>
-                    </div>
+                     <img 
+                       src="/images/inicio.jpg" 
+                       alt="Taller inicial de cerámica"
+                       className="w-full h-full object-cover"
+                       loading="lazy"
+                     />
                   </div>
                 </div>
                 <div className="md:w-2/3">
@@ -52,10 +54,12 @@ const About = () => {
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3 md:order-2">
                   <div className="aspect-square overflow-hidden rounded-lg">
-                    {/* History image 2 placeholder - Reemplazar con /images/history2.jpg */}
-                    <div className="w-full h-full bg-[#f8f4e3] flex items-center justify-center">
-                      <span className="text-[#c8553d] font-semibold">[Imagen: Crecimiento]</span>
-                    </div>
+                     <img 
+                       src="/images/expancion.jpg" 
+                       alt="Taller en etapa de expansión"
+                       className="w-full h-full object-cover"
+                       loading="lazy"
+                     />
                   </div>
                 </div>
                 <div className="md:w-2/3 md:order-1">
@@ -71,10 +75,12 @@ const About = () => {
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3">
                   <div className="aspect-square overflow-hidden rounded-lg">
-                    {/* History image 3 placeholder - Reemplazar con /images/history3.jpg */}
-                    <div className="w-full h-full bg-[#f8f4e3] flex items-center justify-center">
-                      <span className="text-[#c8553d] font-semibold">[Imagen: Actualidad]</span>
-                    </div>
+                     <img 
+                       src="/images/actualidad.jpg" 
+                       alt="Taller actual"
+                       className="w-full h-full object-cover"
+                       loading="lazy"
+                     />
                   </div>
                 </div>
                 <div className="md:w-2/3">
